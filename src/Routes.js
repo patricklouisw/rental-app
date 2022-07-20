@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage/HomePage";
 import LogIn from "./pages/Login/LogIn";
 import SignUp from "./pages/SignUp/SignUp";
 import RentalMap from "./pages/RentalMap/RentalMap";
-import SubletMap from "./pages/SubletMap/SubletMap";
 import Roommate from "./pages/Roommate/Roommate";
 
 const Routing = () => {
@@ -16,9 +15,6 @@ const Routing = () => {
       </Route>
       <Route exact path="/maps/rent">
         <RentalMap />
-      </Route>
-      <Route exact path="/maps/sublet">
-        <SubletMap />
       </Route>
       <Route exact path="/roommates">
         <Roommate />

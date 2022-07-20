@@ -7,12 +7,10 @@ import styles from "./MapLayout.module.css";
 
 const Layout = () => {
   return (
-    <>
-      <div className={styles.main}>
-        <SideBar />
-        <MainPage />
-      </div>
-    </>
+    <div className={styles.main}>
+      <SideBar />
+      <MainPage />
+    </div>
   );
 };
 

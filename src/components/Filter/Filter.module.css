@@ -1,8 +1,15 @@
 .sidebar {
-  width: auto;
   height: 100vh;
   background-color: rgb(255, 255, 255);
   padding: 1rem;
+}
+
+.collapse {
+  width: 30%;
+}
+
+.notCollapse {
+  width: 70%;
 }
 
 .sidebar div {
@@ -17,4 +24,17 @@
 
 .title {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title button {
+  border-style: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

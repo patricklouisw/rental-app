@@ -16,12 +16,7 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink activeClassName={styles.active} to="/maps/rent">
-              Rent
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName={styles.active} to="/maps/sublet">
-              Sublet
+              Rent/Sublet
             </NavLink>
           </li>
           <li>

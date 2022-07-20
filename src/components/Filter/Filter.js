@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineLeft } from "react-icons/ai";
 
 import styles from "./Filter.module.css";
 
 const SideBar = () => {
+  const [isCollapse, setIsCollapse] = useState(false);
+
   return (
-    <div className={styles.sidebar}>
+    <div
+      className={`styles.sidebar ${
+        isCollapse ? styles.collapse : styles.notCollapse
+      }`}
+    >
       <div className={styles.title}>
-        <h2>Toronto Condos for Rent</h2>
-        <button>
+        <div>
+          <h2>Toronto Places for</h2>
+          <div>
+            <input type="radio" value="rent" name="rentsublet" />
+            <label>RENT</label>
+            <input type="radio" value="sublet" name="rentsublet" />
+            <label>SUBLET</label>
+          </div>
+        </div>
+
+        <button
+          onClick={(e) => {
+            setIsCollapse(!isCollapse);
+          }}
+        >
           <AiOutlineLeft />
         </button>
       </div>
+
       <hr />
 
       <table className="filter">
