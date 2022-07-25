@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineLeft } from "react-icons/ai";
 
+import Listing from "../Listing/Listing";
+
 import styles from "./Filter.module.css";
 
 const SideBar = () => {
@@ -51,7 +53,9 @@ const SideBar = () => {
         University - distance - estimated travel time
       </div>
 
-      <div className="">Listings</div>
+      <div className="listings">
+        <Listing />
+      </div>
     </div>
   );
 };
